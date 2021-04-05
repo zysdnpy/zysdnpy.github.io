@@ -163,7 +163,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/05/2D%E5%B0%8F%E4%BA%BA%E7%BB%88%E4%BA%8E%E6%90%9E%E5%AE%9A%E4%BA%86/">���ڰ��Ǹ�Ů�Ļ���Сè���ˣ�����</a>
+      <a class="article-title" href="/2021/04/05/2D%E5%B0%8F%E4%BA%BA%E7%BB%88%E4%BA%8E%E6%90%9E%E5%AE%9A%E4%BA%86/">终于把那个女的换成小猫咪了！！！</a>
     </h1>
   
 
@@ -176,9 +176,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>���������_config.xml�ļ���<br>�ٷ���˵����ʵ��Ч���Ĵ�����Է��������_config.xml�ļ�����</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-wanko &#x2F;&#x2F;ʹ�õ�ģ����</span><br><span class="line">  display: &#x2F;&#x2F;�������Ĭ�϶�λ��������ڴ�΢��,bottom</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">    bottom:-30</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure>
-<p>ʵ���ϣ�ȷʵ����ʾ��������Ĭ�ϵ��Ǹ�Ů���ӡ���������<br>Ȼ�󲻹ܼ���ʲôģ�Ͷ���ʾ�Ǹ����ӡ�������<br>Ȼ���԰������Ǵ��������blogĿ¼�µ�_config.xml�ļ��У����ֿ�������<br>���Ͼ��Ǽ���һ��live2dģ�͵�ȫ������<br>live2d��ǰ�����ձ��������һ��������ò�˵���ձ���լ����һ����ȷʵ��һ�ס�����<br>���ˣ��������úú�ѧϰJava��QAQ</p>
+        <p>问题出在了_config.xml文件上<br>官方是说以下实现效果的代码可以放在主题的_config.xml文件里面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-wanko &#x2F;&#x2F;使用的模型名</span><br><span class="line">  display: &#x2F;&#x2F;如果觉得默认定位不满意可在此微调,bottom</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">    bottom:-30</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure>
+<p>实际上，确实能显示，但是是默认的那个女孩子。。。。。<br>然后不管加载什么模型都显示那个妹子。。。。<br>然后尝试把上面那串代码放在blog目录下的_config.xml文件中，发现可以用了<br>以上就是加载一个live2d模型的全部经过<br>live2d是前几年日本搞出来的一项技术，不得不说，日本死宅在这一方面确实有一套。。。<br>好了，接下来该好好学习Java了QAQ</p>
 
       
 
